@@ -34,8 +34,8 @@ RUN wget https://download.foldingathome.org/releases/public/release/fahclient/de
 
 RUN wget https://raw.githubusercontent.com/Trivaltx/oktetoremote/main/000-default.conf
 RUN wget https://raw.githubusercontent.com/Trivaltx/Ubuntu-Desktop-noVNC-Heroku-VPS/main/config.xml
-RUN rm /etc/fahclient/config.xml
-RUN mv config.xml /etc/fahclient
+
+
 RUN rm /etc/apache2/sites-available/000-default.conf
 RUN mv 000-default.conf /etc/apache2/sites-available
 RUN npm install -g wstunnel
