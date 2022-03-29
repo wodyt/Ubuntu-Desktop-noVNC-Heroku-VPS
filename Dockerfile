@@ -2,7 +2,7 @@ FROM ubuntu
 RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt install ssh wget npm apache2 php php-curl php-cli php-fpm php-json php-common php-mysql php-zip php-gd php-mbstring  php-xml php-pear php-bcmath  -y
 
-
+ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
     apt install dbus-x11 -y  && \
     apt install sudo -y  && \ 
