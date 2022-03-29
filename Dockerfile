@@ -31,7 +31,7 @@ RUN apt-get update && \
     apt-get autoremove
     
 RUN wget https://download.foldingathome.org/releases/public/release/fahclient/debian-stable-64bit/v7.6/fahclient_7.6.21_amd64.deb
-RUN dpkg -i fahclient_7.6.21_amd64.deb
+
 RUN wget https://raw.githubusercontent.com/Trivaltx/oktetoremote/main/000-default.conf
 RUN wget https://raw.githubusercontent.com/Trivaltx/Ubuntu-Desktop-noVNC-Heroku-VPS/main/config.xml
 RUN rm /etc/fahclient/config.xml
